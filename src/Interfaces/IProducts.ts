@@ -1,8 +1,18 @@
-interface IProducts {
-  id?: number;
+interface IListProducts {
+  id: number;
   name: string;
   amount: string;
   orderId: number;
 }
 
-export default IProducts;
+interface ICreateProducts {
+  id?: number;
+  name: string;
+  amount: string;
+  orderId?: number;
+}
+
+export {
+  IListProducts,
+  ICreateProducts,
+};
